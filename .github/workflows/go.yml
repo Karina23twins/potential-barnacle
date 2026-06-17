@@ -50,6 +50,6 @@ jobs:
       - uses: golangci/golangci-lint-action@v3
 
       - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '24'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
