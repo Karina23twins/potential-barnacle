@@ -48,3 +48,8 @@ jobs:
       - uses: actions/setup-go@v4
       # Используется действие "golangci/golangci-lint-action@v3", которое запускает линтер. Он проверит код на соответствие стилю и отсутствие логических ошибок
       - uses: golangci/golangci-lint-action@v3
+
+      - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '24'
